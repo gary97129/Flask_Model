@@ -98,6 +98,12 @@ Pear Admin Flask
 # 下 載
 git clone https://gitee.com/pear-admin/pear-admin-flask
 
+# Venv 安装
+python -m venv venv
+
+# Venv 設定
+venv\Scripts\activate.bat
+
 # 安 裝
 pip install -r requirements.txt
 ```
@@ -123,12 +129,6 @@ SECRET_KEY='pear-admin-flask'
 MAIL_SERVER='smtp.qq.com'
 MAIL_USERNAME='123@qq.com'
 MAIL_PASSWORD='XXXXX' # 應用程式密碼
-```
-
-#### Venv 安装
-
-```bash
-python -m venv venv
 ```
 
 #### 運行項目
