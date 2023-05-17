@@ -11,7 +11,6 @@ class BaseConfig:
     PORT = 5000
 
     SUPERADMIN = 'admin'
-
     SYSTEM_NAME = 'Pear Admin'
     # 主题面板的链接列表配置
     SYSTEM_PANEL_LINKS = [
@@ -47,30 +46,30 @@ class BaseConfig:
 
     # mysql 配置
     MYSQL_USERNAME = "root"
-    MYSQL_PASSWORD = "123456"
+    MYSQL_PASSWORD = ""
     MYSQL_HOST = "127.0.0.1"
     MYSQL_PORT = 3306
-    MYSQL_DATABASE = "PearAdminFlask"
+    MYSQL_DATABASE = "pearadminflask"
 
     # mysql 数据库的配置信息
-    SQLALCHEMY_DATABASE_URI = f"mysql+pymysql://{MYSQL_USERNAME}:{urlquote(MYSQL_PASSWORD)}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}?charset=utf8mb4"
+    SQLALCHEMY_DATABASE_URI = f"mysql+pymysql://{MYSQL_USERNAME}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}?charset=utf8mb4"
 
     # 默认日志等级
     LOG_LEVEL = logging.WARN
     #
-    MAIL_SERVER = 'smtp.qq.com'
+    MAIL_SERVER = 'smtp.gmail.com'
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
     MAIL_PORT = 465
-    MAIL_USERNAME = '123@qq.com'
-    MAIL_PASSWORD = 'XXXXX'  # 生成的授权码
+    MAIL_USERNAME = 'nfuim134257@gmail.com'
+    MAIL_PASSWORD = 'ilkdhzulrsxjaonp'  # 生成的授权码
     MAIL_DEFAULT_SENDER = MAIL_USERNAME
 
     # 設置 APSCHEDULER 參數
     SCHEDULER_API_ENABLED = False
     SCHEDULER_JOBSTORES: dict = {
         'default': SQLAlchemyJobStore(
-            url=f'mysql+pymysql://{MYSQL_USERNAME}:{urlquote(MYSQL_PASSWORD)}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}')
+            url=f'mysql+pymysql://{MYSQL_USERNAME}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}')
     }
     SCHEDULER_EXECUTORS: dict = {
         'default': ThreadPoolExecutor(20)

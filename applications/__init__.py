@@ -6,6 +6,7 @@ from applications.extensions import init_plugs
 from applications.view import init_view
 
 
+
 def create_app():
     app = Flask(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
     # 引入数据库配置
