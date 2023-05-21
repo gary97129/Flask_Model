@@ -104,7 +104,7 @@ Pear Admin Flask
   └─ index          # 主頁範本
 ```
 
-#### 項目安裝
+## 項目安裝
 
 ```bash
 # 下載專案
@@ -123,7 +123,7 @@ venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
 
-#### 修改配置
+## 修改配置
 
 ```python
 # MySql配置信息
@@ -146,7 +146,7 @@ MAIL_USERNAME='123@gmail.com'
 MAIL_PASSWORD='XXXXX' # 應用程式密碼
 ```
 
-#### 運行項目
+## 運行項目
 
 ```bash
 # 初 始 化 數 據 庫
@@ -158,7 +158,7 @@ flask admin init
 
 執行 python app.py 命令啟動項目
 
-#### 命令行創建視圖
+## 命令行創建視圖
 
 ```bash
 # 示例
@@ -169,7 +169,7 @@ flask new --type view --name test/a
 # 訪問http://127.0.0.1:5000/test/a/
 ```
 
-#### 使用docker-compose運行项目
+## 使用docker-compose運行项目
 
 ```bash
 git clone https://gitee.com/pear-admin/pear-admin-flask
@@ -195,7 +195,7 @@ docker-compose -f dockercompose.yaml dwon
 
 ```
 
-#### 預覽项目
+## 預覽项目
 
 |                        |                        |
 | ---------------------- | ---------------------- |
@@ -203,4 +203,12 @@ docker-compose -f dockercompose.yaml dwon
 | ![](docs/assets/3.jpg) | ![](docs/assets/4.jpg) |
 | ![](docs/assets/5.jpg) | ![](docs/assets/6.jpg) |
 
+## 相關教學影片
+### 推薦觀看順序
+
+#### (一)
+[Python免费开源的后端管理系统：pear admin flask 介绍及运行教程](https://www.bilibili.com/video/BV1JF411L73c/)
+
+#### (二)
+[Python后端管理系统：pear admin flask 二次开发](https://www.bilibili.com/video/BV1fA4y1o7SL/)
 
