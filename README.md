@@ -27,13 +27,13 @@
   <img  width="92%" style="border-radius:10px;margin-top:20px;margin-bottom:20px;box-shadow: 2px 0 6px gray;" src="https://images.gitee.com/uploads/images/2020/1019/104805_042b888c_4835367.png" />
 </div>
 
-#### 項目簡介
+## 項目簡介
 
 Pear Admin Flask 基於 Flask 的後台管理系統，擁抱應用廣泛的python語言，通過使用本系統，即可快速構建你的功能業務
 專案旨在為 python 開發者提供一個後台管理系統的範本，可以快速構建資訊管理系統。
 專案使用flask-sqlalchemy + 權限驗證 + Flask-APScheduler 定時任務 + marshmallow 序列化與數據驗證
 
-#### 内置功能
+## 内置功能
 
 - [x] 使用者管理：使用者是系統操作者，該功能主要完成系統使用者配置。
 - [x] 許可權管理：配置系統功能表，操作許可權，按鈕許可權標識等。
@@ -44,7 +44,19 @@ Pear Admin Flask 基於 Flask 的後台管理系統，擁抱應用廣泛的pytho
 - [x] 檔案上傳： 圖片上傳示例
 - [x] 定時任務： 簡單的定時任務
 
-#### 项目結構
+## 項目介紹
+項目分為前端與後端兩個部分
+### 前端項目
+#### layui
+layui 是一個前端 JavaScript 框架，使用的底層技術為 es5、jquery。 編寫了一整套 css 樣式、眾多好用的官方元件，使用的類似 amd 的打包方式。 雖說這種技術在現在看來已經過時了，但是對於不想學習太多的前端技術又想做出比較好看的後端程式師、零基礎的新手來說，可以說是上天的恩賜，尤其是在這個前端瘋狂內卷的時代。
+
+layui 框架的上手難度低，同時有完善的官方文檔，對於那些希望快速入門並製作出精美網頁，同時又不想花費太多時間學習前端技術的人來說，layui 是一個非常理想的選擇。
+
+### 前端項目
+#### flask
+Flask 是一個流行的 Python Web 框架，用於構建 Web 應用程式。 它以其簡單性、靈活性和易用性而聞名。 Flask 遵循 WSGI（Web伺服器閘道介面）規範，旨在輕巧和模組化，使開發人員能夠快速高效地創建 Web 應用程式。
+
+Flask 應用程式提供了堅實的基礎，其簡單性、靈活性和活躍的社區，無論您要開發一個簡單的網站還是一個更複雜的 Web 專案， Flask 都是非常理想的選擇。
 
 ## 應用結構
 
@@ -95,16 +107,19 @@ Pear Admin Flask
 #### 項目安裝
 
 ```bash
-# 下 載
+# 下載專案
 git clone https://gitee.com/pear-admin/pear-admin-flask
 
-# Venv 安装
+# 進入到項目目錄
+cd pear-admin-flask
+
+# Venv 虛擬環境安装
 python -m venv venv
 
-# Venv 設定
+# 進入到虛擬環境
 venv\Scripts\activate.bat
 
-# 安 裝
+# 安裝依賴
 pip install -r requirements.txt
 ```
 
@@ -126,8 +141,8 @@ REDIS_PORT=6379
 SECRET_KEY='pear-admin-flask'
 
 # 信箱配置
-MAIL_SERVER='smtp.qq.com'
-MAIL_USERNAME='123@qq.com'
+MAIL_SERVER='smtp.gmail.com'
+MAIL_USERNAME='123@gmail.com'
 MAIL_PASSWORD='XXXXX' # 應用程式密碼
 ```
 
@@ -180,24 +195,6 @@ docker-compose -f dockercompose.yaml dwon
 
 ```
 
-#### Pear Admin Flask 還有以下幾個版本：
-
-```
-                    
-
-**[mini 分支版本](https://gitee.com/pear-admin/pear-admin-flask/tree/mini/)**
-
-flask 2.0.1 + flask-sqlalchemy + 權限驗證 + flask-restful
-
-此版本主要是提供一個最個簡的pear admin flask 快速開發的範本，可以幫助使用者快速搭建一個後台管理系統。
-因為一些歷史問題，例如 flask-restful 不再繼續更新等，此版本不會也再繼續更新，而會將精力投入到 main 分支當中去。
-
-如果想使用這個分支進行開發，可以看 https://www.bilibili.com/video/BV1FF411b7bS 進行學習。
-
-**[main 分支版本]（https://gitee.com/pear-admin/pear-admin-flask/tree/main/）**
-
-main分支是對mini分支的後續，目前還在開發中。
-```
 #### 預覽项目
 
 |                        |                        |
